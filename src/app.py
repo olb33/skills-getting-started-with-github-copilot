@@ -1,9 +1,11 @@
+
 # Ajout d'un endpoint DELETE pour désinscrire un participant
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 import os
+from pathlib import Path
 
 app = FastAPI()
 
